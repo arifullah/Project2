@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <alerts>
+        <fullName>TestEmailAlert1</fullName>
+        <description>TestEmailAlert1</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>pavan.m@techrains.com</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/CustomerPortalChangePwdEmail</template>
+    </alerts>
+    <fieldUpdates>
+        <fullName>TestFieldUpdate1</fullName>
+        <field>OwnerId</field>
+        <lookupValue>pavan.m@techrains.com</lookupValue>
+        <lookupValueType>User</lookupValueType>
+        <name>TestFieldUpdate1</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>LookupValue</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <rules>
+        <fullName>TestCustomRule1</fullName>
+        <active>false</active>
+        <criteriaItems>
+            <field>TestCustomObject__c.CreatedById</field>
+            <operation>equals</operation>
+            <value>p</value>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+</Workflow>

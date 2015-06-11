@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EntitlementProcess xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>false</active>
+    <description>from sai</description>
+    <entryStartDateField>Case.CreatedDate</entryStartDateField>
+    <exitCriteriaFilterItems>
+        <field>Case.IsClosed</field>
+        <operation>equals</operation>
+        <value>true</value>
+    </exitCriteriaFilterItems>
+    <isVersionDefault>true</isVersionDefault>
+    <name>testcreateentitlement process12</name>
+    <versionMaster>55290000000LgpS</versionMaster>
+    <versionNumber>1</versionNumber>
+</EntitlementProcess>
